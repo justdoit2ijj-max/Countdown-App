@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/style.css">
+  <script type="module" src="./src/main.js"></script>
+  <title>Countdown App</title>
+</head>
+
+<body
+  class="min-h-screen font-Red-Hat-Text font-bold bg-slate-900 bg-[url('/Countdown-App/images/bg-stars.svg')] bg-cover relative flex flex-col items-center overflow-x-hidden">
+
+  <img src="./images/pattern-hills.svg" alt="hills"
+    class="absolute bottom-0 -z-10 left-0 right-0 w-full" />
+
+  <main>
+    <section class="pt-16 md:pt-25">
+
+      <h1 class="tracking-[4px] md:tracking-[8px] text-center text-white text-lg md:text-2xl px-4">
+        WE'RE LAUNCHING SOON
+      </h1>
+
+      <div class="flex flex-wrap justify-center gap-4 md:gap-6 mt-12 md:mt-20 px-4">
+
+        <div>
+          <div
+            class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-36 lg:h-36
+            relative before:content-[''] before:absolute before:w-2 sm:before:w-3 lg:before:w-5
+            before:h-2 sm:before:h-3 lg:before:h-5 before:bg-slate-900 before:top-1/2
+            before:translate-y-[-50%] before:-left-1 sm:before:-left-1.5 lg:before:-left-2.5
+            before:rounded-full
+            after:content-[''] after:absolute after:w-2 sm:after:w-3 lg:after:w-5
+            after:h-2 sm:after:h-3 lg:after:h-5 after:bg-slate-900 after:top-1/2
+            after:translate-y-[-50%] after:-right-1 sm:after:-right-1.5 lg:after:-right-2.5
+            after:rounded-full
+            flex items-center justify-center
+            text-4xl sm:text-5xl md:text-6xl lg:text-8xl
+            text-pink-100 perspective-near bg-slate-800 rounded-2xl border-b-8 border-slate-800">
+
+            <span id="day">8</span>
+
+            <div id="day-first-panel"
+              class="absolute h-1/2 w-full bg-slate-800 top-0 rounded-t-2xl -z-10 origin-bottom">
+            </div>
+
+            <div class="absolute h-1/2 w-full bg-slate-700 bottom-0 rounded-b-2xl -z-10"></div>
+          </div>
+
+          <p class="text-center text-slate-500 tracking-[4px] md:tracking-[8px] mt-3 text-xs md:text-sm">
+            DAYS
+          </p>
+        </div>
+
+        <div>
+          <div
+            class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-36 lg:h-36
+            relative before:content-[''] before:absolute before:w-2 sm:before:w-3 lg:before:w-5
+            before:h-2 sm:before:h-3 lg:before:h-5 before:bg-slate-900 before:top-1/2
+            before:translate-y-[-50%] before:-left-1 sm:before:-left-1.5 lg:before:-left-2.5
+            before:rounded-full
+            after:content-[''] after:absolute after:w-2 sm:after:w-3 lg:after:w-5
+            after:h-2 sm:after:h-3 lg:after:h-5 after:bg-slate-900 after:top-1/2
+            after:translate-y-[-50%] after:-right-1 sm:after:-right-1.5 lg:after:-right-2.5
+            after:rounded-full
+            flex items-center justify-center
+            text-4xl sm:text-5xl md:text-6xl lg:text-8xl
+            text-pink-100 perspective-near bg-slate-800 rounded-2xl border-b-8 border-slate-800">
+
+            <span id="hour">59</span>
+
+            <div id="hour-first-panel"
+              class="absolute h-1/2 w-full bg-slate-800 top-0 rounded-t-2xl -z-10 origin-bottom">
+            </div>
+
+            <div class="absolute h-1/2 w-full bg-slate-700 bottom-0 rounded-b-2xl -z-10"></div>
+          </div>
+
+          <p class="text-center text-slate-500 tracking-[4px] md:tracking-[8px] mt-3 text-xs md:text-sm">
+            HOURS
+          </p>
+        </div>
+
+        <div>
+          <div
+            class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-36 lg:h-36
+            relative before:content-[''] before:absolute before:w-2 sm:before:w-3 lg:before:w-5
+            before:h-2 sm:before:h-3 lg:before:h-5 before:bg-slate-900 before:top-1/2
+            before:translate-y-[-50%] before:-left-1 sm:before:-left-1.5 lg:before:-left-2.5
+            before:rounded-full
+            after:content-[''] after:absolute after:w-2 sm:after:w-3 lg:after:w-5
+            after:h-2 sm:after:h-3 lg:after:h-5 after:bg-slate-900 after:top-1/2
+            after:translate-y-[-50%] after:-right-1 sm:after:-right-1.5 lg:after:-right-2.5
+            after:rounded-full
+            flex items-center justify-center
+            text-4xl sm:text-5xl md:text-6xl lg:text-8xl
+            text-pink-100 perspective-near bg-slate-800 rounded-2xl border-b-8 border-slate-800">
+
+            <span id="min">59</span>
+
+            <div id="min-first-panel"
+              class="absolute h-1/2 w-full bg-slate-800 top-0 rounded-t-2xl -z-10 origin-bottom">
+            </div>
+
+            <div class="absolute h-1/2 w-full bg-slate-700 bottom-0 rounded-b-2xl -z-10"></div>
+          </div>
+
+          <p class="text-center text-slate-500 tracking-[4px] md:tracking-[8px] mt-3 text-xs md:text-sm">
+            MINUTES
+          </p>
+        </div>
+
+        <div>
+          <div
+            class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-36 lg:h-36
+            relative before:content-[''] before:absolute before:w-2 sm:before:w-3 lg:before:w-5
+            before:h-2 sm:before:h-3 lg:before:h-5 before:bg-slate-900 before:top-1/2
+            before:translate-y-[-50%] before:-left-1 sm:before:-left-1.5 lg:before:-left-2.5
+            before:rounded-full
+            after:content-[''] after:absolute after:w-2 sm:after:w-3 lg:after:w-5
+            after:h-2 sm:after:h-3 lg:after:h-5 after:bg-slate-900 after:top-1/2
+            after:translate-y-[-50%] after:-right-1 sm:after:-right-1.5 lg:after:-right-2.5
+            after:rounded-full
+            flex items-center justify-center
+            text-4xl sm:text-5xl md:text-6xl lg:text-8xl
+            text-pink-100 perspective-near bg-slate-800 rounded-2xl border-b-8 border-slate-800">
+
+            <span id="sec">60</span>
+
+            <div id="sec-first-panel"
+              class="absolute h-1/2 w-full bg-slate-800 top-0 rounded-t-2xl -z-10 origin-bottom">
+            </div>
+
+            <div class="absolute h-1/2 w-full bg-slate-700 bottom-0 rounded-b-2xl -z-10"></div>
+          </div>
+
+          <p class="text-center text-slate-500 tracking-[4px] md:tracking-[8px] mt-3 text-xs md:text-sm">
+            SECONDS
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="flex items-center gap-x-4 absolute bottom-10">
+    <img src="./images/icon-facebook.svg" alt="facebook">
+    <img src="./images/icon-pinterest.svg" alt="pinterest">
+    <img src="./images/icon-instagram.svg" alt="instagram">
+  </footer>
+</body>
+
+</html>
